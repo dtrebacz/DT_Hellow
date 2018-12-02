@@ -2,7 +2,7 @@ import java.text.DecimalFormat;
 
 
 
-public class Sample {
+public class Sample_1 {
 
     // Zmienne(stałe) statyczne (klasowe)
     static final double PI = 3.14;
@@ -19,7 +19,7 @@ public class Sample {
         int x,y,z;
         String user = "Tomek", admin = "pawel";
 
-        Sample sample = new Sample(); // egzemplaż samego siebie
+        Sample_1 sample = new Sample_1(); // egzemplaż samego siebie
 
         System.out.println(sample.c);
         System.out.println(PI);
