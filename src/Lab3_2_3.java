@@ -4,9 +4,15 @@ public class Lab3_2_3 {
         dog Azor = new dog("Azor");
         dog Burek = new dog("Burek");
         dog Luna = new dog("Luna");
+        dog Sunia = new dog("Sunia");
+
+
         showDogInfo(Azor);
         showDogInfo(Burek);
         showDogInfo(Luna);
+
+
+
 
     }
 
