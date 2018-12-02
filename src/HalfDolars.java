@@ -10,24 +10,16 @@ public class HalfDolars {
         philadelphia[1] = 5_000_000;
         philadelphia[2] = 1_800_000;
 
-
-        total[0] = denver[0]+philadelphia[0];
-        total[1] = denver[1]+philadelphia[1];
-        total[2] = denver[2]+philadelphia[2];
-
-
-
-
+        for(int i=0; i<total.length; i++) {
+            total[i] = denver[i] + philadelphia[i];
+        }
         average = (total[0] + total[1] + total[2])/3;
 
-        System.out.println("Produkcja w 2012r wynosiła: ");
-        System.out.format("%,d%n",total[0]);
+        for(int i=0; i<total.length; i++){
+        System.out.println("Produkcja w 201"+i+"r wynosiła: ");
+        System.out.format("%,d%n",total[i]);}
 
-        System.out.println("Produkcja w 2013r wynosiła: ");
-        System.out.format("%,d%n",total[1]);
 
-        System.out.println("Produkcja w 2014r wynosiła: ");
-        System.out.format("%,d%n",total[2]);
 
 
 
