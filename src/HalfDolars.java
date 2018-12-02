@@ -12,15 +12,11 @@ public class HalfDolars {
 
         for(int i=0; i<total.length; i++) {
             total[i] = denver[i] + philadelphia[i];
+            System.out.println("Produkcja w 201"+(i+2)+"r wynosiła: ");
+            System.out.format("%,d%n",total[i]);
         }
+
         average = (total[0] + total[1] + total[2])/3;
-
-        for(int i=0; i<total.length; i++){
-        System.out.println("Produkcja w 201"+i+"r wynosiła: ");
-        System.out.format("%,d%n",total[i]);}
-
-
-
 
 
 
