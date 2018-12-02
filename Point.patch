@@ -1,0 +1,52 @@
+Index: src/EqualsTester.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/EqualsTester.java	(date 1543745090294)
++++ src/EqualsTester.java	(date 1543745090294)
+@@ -0,0 +1,44 @@
++public class EqualsTester {
++    public static void main(String[] args) {
++
++        String str1, str2, str3 ;
++
++        str1 = "raz dwa trzy";
++        str2 = str1;
++        str3 = new String("raz dwa trzy");
++
++        System.out.println("Str1: "+str1);
++        System.out.println("Str2: "+str2);
++        System.out.println("Czy to jest ten sam objekt? "+ (str1 == str2));
++
++
++        System.out.println("Str1: "+str1);
++        System.out.println("Str3: "+str3);
++        System.out.println("Czy to jest ten sam objekt? "+ (str1 == str3)); // takie porównanie sprawdza czy to jest ten sam obiekt
++
++        System.out.println("Czy zawartosc jest taka sama ? "+ str1.equals(str2));// takie porównanie sprawdza czy zawartosc jest ta sama
++
++
++
++        System.out.println("********************************************************\n\n");
++
++        String name = "Tomek";
++        System.out.println("String name = \"Tomek\";");
++        System.out.println("Name is member of class: " + name.getClass().getName());
++        System.out.println("Name is member of class: " + name.getClass());
++        System.out.println("Name is member of class: " + name.getClass().getSimpleName());
++
++        System.out.println("Czy jest instancją klasy String?: " + (name instanceof String));
++        System.out.println("Czy jest instancją klasy Object?: " + (name instanceof Object));
++
++
++        System.out.println("********************************************************\n\n");
++        Object object = new Object();
++        System.out.println("Object object = new Object();");
++        System.out.println("Czy jest instancją klasy integer?: " + (object instanceof Integer));
++        System.out.println("********************************************************\n\n");
++
++
++
++    }
++}
