@@ -14,18 +14,17 @@ public class Box {
         box.printBox();
 
 // z punktami 10,10 i 20.20
-        Point point1 = new Point(10,10);
-        Point point2 = new Point(20,20);
+
 
         System.out.println("Wywolanie buildBox punktami (10,10) i (20,20)");
-        box.buildBox(point1,point2);
+        box.buildBox(new Point(10,10),new Point(20,20));
         box.printBox();
 
 // z punktem 10,10 , szerokością 5 i wysokością 10
 
 
         System.out.println("Wywolanie buildBox punktem 10,10 , szerokością 5 i wysokością 10)");
-        box.buildBox(point1,5,10);
+        box.buildBox(new Point(10,10),5,10);
         box.printBox();
 
 
