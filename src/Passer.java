@@ -8,14 +8,21 @@ public class Passer {
     public static void main(String[] args) {
 Passer passer = new Passer();
 
-        System.out.println(passer.point);
-        passer.changePoint(passer.point);
-        System.out.println(passer.point);
-        System.out.println();
+//        System.out.println(passer.point);
+//        passer.changePoint(passer.point);
+//        System.out.println(passer.point);
+//        System.out.println();
+//
+//        System.out.println(passer.x);
+//        passer.changeX(passer.x);
+//        System.out.println(passer.x);
 
-        System.out.println(passer.x);
-        passer.changeX(passer.x);
-        System.out.println(passer.x);
+
+        passer.toUpperCase(args);
+
+        for (String str: args){
+            System.out.println(str);
+        }
 
 
     }
