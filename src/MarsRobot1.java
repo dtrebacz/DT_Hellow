@@ -17,7 +17,7 @@ public class MarsRobot1 implements Robot {
         Name = NameIn;
         temperature = Temp;
     }
-    
+
 
     //***********************************************************************************
 
