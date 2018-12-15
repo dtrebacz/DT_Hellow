@@ -28,8 +28,8 @@ public class Box {
         x1 = topLeft.x;
         y1 = topLeft.y;
 
-        x2 = topLeft.x+h;
-        y2 = topLeft.y+w;
+        x2 = x1+h;
+        y2 = y1+w;
 
         return this;
     }
