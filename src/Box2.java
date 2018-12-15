@@ -31,22 +31,22 @@ public class Box2 {
 
 
     public static void main(String[] args) {
-        Box2 boxA = new Box2(25,25,50,50);
+        Box2 box = new Box2(25,25,50,50);
 
         System.out.println("Box A: Wywolanie buildBox ze wspolzednymi (25,25) i (50,50)");
-            boxA.printBox();
+            box.printBox();
 
 // z punktami 10,10 i 20.20
-        Box2 boxB = new Box2(new Point(10,10),new Point(20,20));
+        box = new Box2(new Point(10,10),new Point(20,20));
 
         System.out.println("Box B: Wywolanie buildBox punktami (10,10) i (20,20)");
-        boxB.printBox();
+        box.printBox();
 
 // z punktem 10,10 , szerokością 5 i wysokością 10
 
-        Box2 boxC = new Box2(new Point(10,10),5,10);
+         box = new Box2(new Point(10,10),5,10);
         System.out.println("Box C: Wywolanie buildBox punktem 10,10 , szerokością 5 i wysokością 10)");
-        boxC.printBox();
+        box.printBox();
 
 
 
