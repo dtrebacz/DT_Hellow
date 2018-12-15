@@ -3,9 +3,11 @@ public class Sample_6 {
 
 
     public static void main(String[] args) {
-        new A();
-        new A(1);
-        new A("ddd");
+//        new A();
+//        new A(1);
+//        new A("ddd");
+
+        new C(2);
     }
 
 
@@ -27,7 +29,18 @@ class A{
 }
 
 
-class B{
+class B extends A {
 
+    public B(int i){
+        System.out.println("B");
+    }
+
+}
+
+class C extends B {
+    public C(int i){
+        super(i); // gdy w klasie nadrzędnej występuje konstruktor bezargumentowy nie musimy tego używać
+        System.out.println("C");
+    }
 
 }
