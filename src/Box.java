@@ -6,6 +6,35 @@ public class Box {
     int x2 = 0;
     int y2 = 0;
 
+    public static void main(String[] args) {
+        Box box = new Box();
+
+        System.out.println("Wywolanie buildBox ze wspolzednymi (25,25) i (50,50)");
+        box.buildBox(25,25,50,50);
+        box.printBox();
+
+// z punktami 10,10 i 20.20
+        Point point1 = new Point(10,10);
+        Point point2 = new Point(20,20);
+
+        System.out.println("Wywolanie buildBox punktami (10,10) i (20,20)");
+        box.buildBox(point1,point2);
+        box.printBox();
+
+// z punktem 10,10 , szerokością 5 i wysokością 10
+
+
+        System.out.println("Wywolanie buildBox punktem 10,10 , szerokością 5 i wysokością 10)");
+        box.buildBox(point1,5,10);
+        box.printBox();
+
+
+
+    }
+
+
+
+
     //Przeciążanie metod
     Box buildBox(int x1, int y1, int x2, int y2){
         this.x1 = x1;
@@ -28,13 +57,20 @@ public class Box {
         x1 = topLeft.x;
         y1 = topLeft.y;
 
-        x2 = x1+h;
-        y2 = y1+w;
+        x2 = x1+w;
+        y2 = y1+h;
 
         return this;
     }
 
-
+void printBox(){
+    System.out.print("Box: <");
+    System.out.print(x1+ ","+y1);
+    System.out.print(";");
+    System.out.print(x2+ ","+y2);
+    System.out.print(">");
+    System.out.println("");
+}
 
 
 }
