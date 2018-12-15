@@ -18,10 +18,10 @@ class A{
         System.out.println("A: konstruktor bezargumentowy...");
     }
     A(int i){
-        System.out.println("A: konstruktor ze zmienną int...");
+        System.out.println("A: konstruktor ze zmienną int... arg: "+i);
     }
     A(String S){
-        System.out.println("A: konstruktor ze zmienną String...");
+        System.out.println("A: konstruktor ze zmienną String... arg: "+S);
     }
 
 }
