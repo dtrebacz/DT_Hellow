@@ -6,9 +6,11 @@ public class RangeLister {
         // metodę nie statyczną możemy wywołać tylko na stworzonym obiekcie a nie tak jak statyczną bezpośrednio
         RangeLister rangeLister = new RangeLister();
 
-       range = rangeLister.makeRange(4,13);
+       range = rangeLister.makeRange(4,23);
 
        rangeLister.show(range);
+        System.out.println("");
+       rangeLister.show2(range);
 
 
 
@@ -39,6 +41,18 @@ void show(int[] table){
     }
 
 }
+
+    void show2(int[] table){
+        int idx=0;
+        System.out.println("table[");
+        for (int i: table) {
+
+            System.out.print(i+" " );
+
+        }
+        System.out.println("]");
+
+    }
 
 
 }
