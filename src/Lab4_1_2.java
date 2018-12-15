@@ -9,7 +9,7 @@ public class Lab4_1_2 {
         fourPoint.x = 1;
         fourPoint.y = 2;
         fourPoint.z = 10;
-        fourPoint.y = 12;
+        fourPoint.v = 12;
 
         ShowPoint(fourPoint);
 
