@@ -4,13 +4,13 @@ public class ScopeTest {
 
     void printTest(){
         int test = 20;
-        System.out.println("test: "+test);
+        System.out.println("test: "+this.test);
 
     }
 
 
 
-    
+
 
 
 
@@ -20,6 +20,8 @@ public class ScopeTest {
     public static void main(String[] args) {
 
         ScopeTest scopeTest = new ScopeTest();
+
+        System.out.println("--- "+scopeTest.test);
         scopeTest.printTest();
 
     }
